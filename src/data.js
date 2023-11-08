@@ -35,7 +35,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Tom Lone a John Crawford pracují pro FBI. Oba se účastní akce, při které se jim podaří zneškodnit zabijáka z organizace jakuza – Sólistu. Poté oba muži s rodinami chystají party. Někdo jim však jde po krku. Tomův dům je přepaden a Tom s celou rodinou nemilosrdně zastřelen.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 2,
@@ -44,7 +44,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Nora (Jenna Dewan) je studentka elitní umělecké akademie a právě hledá partnera pro své taneční vystoupení. Když se do její školy dostane na veřejně prospěšné práce divoký Tyler (Channing Tatum), je rozhodnuto.",
-        category: "oblíbené, romantický"
+        category: ["oblíbené"]
     },
     {
         id: 3,
@@ -53,7 +53,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Válečný veterán a rančer Jim Hanson žije v Arizoně nedaleko mexických hranic. Jednoho dne se řízením osudu stane ochráncem jedenáctiletého přistěhovalce. Chlapec se snaží se svou matkou uprchnout do Států před zabijáky z kartelu.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 4,
@@ -62,7 +62,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Teenager Jake Tyler (Sean Faris) se s rodiči a bratrem právě přistěhoval do Orlanda a nastoupil do zdejší školy. Tam však narazí na vyhlášeného rváče Ryana a rozhodne se, že se mu postaví. Nejprve však musí u skutečného mistra zvládnout bojová umění…",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 5,
@@ -71,7 +71,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Dvě zkušené zlodějky a nejlepší kamarádky už nebaví utíkat. Přijmou proto do týmu ráznou Sam, aby jim pomohla s posledním úkolem, který se od těch předchozích dost liší.",
-        category: "oblíbené, komedie"
+        category: ["oblíbené"]
     },
     {
         id: 6,
@@ -80,7 +80,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Agentka CIA Mase Brownová (Jessica Chastain) je na smrtící misi. Přísně utajovaná zbraň se dostala do rukou nepovolaných žoldáků, a tak vymyslí plán. Spojí své síly s mezinárodní konkurencí! První je německá agentka - drsňačka Marie (Diane Kruger), další je bývalá  spojenkyně MI6 a špičková počítačová specialistka Khadihjah (Lupita Nyong'o) a do třetice je to zkušená kolumbijská psycholožka Graciela (Penèlope Cruz).",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 7,
@@ -89,7 +89,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Osm zlodějů vezme rukojmí a zamkne se v Královské španělské tiskárně cenin, hlava zločinců manipuluje s policií, aby postupovala podle jeho plánu.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 8,
@@ -98,7 +98,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 9,
@@ -107,7 +107,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 10,
@@ -125,7 +125,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 12,
@@ -134,7 +134,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 13,
@@ -143,7 +143,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 14,
@@ -152,7 +152,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 15,
@@ -161,7 +161,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 16,
@@ -170,7 +170,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 16,
@@ -179,7 +179,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 17,
@@ -188,7 +188,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 18,
@@ -197,7 +197,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 19,
@@ -206,7 +206,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 20,
@@ -215,7 +215,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 21,
@@ -224,7 +224,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 22,
@@ -233,7 +233,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 23,
@@ -242,7 +242,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 24,
@@ -251,7 +251,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 25,
@@ -260,7 +260,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 26,
@@ -269,7 +269,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {
         id: 27,
@@ -278,7 +278,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
-        category: "oblíbené, akční"
+        category: ["oblíbené"]
     },
     {ahoj}
 
