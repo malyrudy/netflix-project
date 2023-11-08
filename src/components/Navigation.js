@@ -25,41 +25,40 @@ const Navigation = () => {
                     <li><FaRegBell /></li>
                     <li><img src={netflix_avatar_smile} alt="netflix-avatar-smile" /></li>
                     <div className="user-dropdown-menu hide">
-                        <ul>
-                            <li>
-                                <img src={netflix_avatar_smile} alt="user-avatar" />
-                                <a href="#">Petra</a>
-                            </li>
-                            <li>
-                                <img src={netflix_avatar_smile} alt="user-avatar" />
-                                <a href="#">David</a>
-                            </li>
-                            <li>
-                                <img src={netflix_avatar_smile} alt="user-avatar" />
-                                <a href="#">Daja</a>
-                            </li>
-                            <li>
-                                <img src={netflix_avatar_smile} alt="user-avatar" />
-                                <a href="#">Valinka</a>
-                            </li>
-                            <li>
-                                <img src={netflix_avatar_smile} alt="user-avatar" />
-                                <a href="#">Spravovat profily</a>
-                            </li>
-                            <li>
-                                <img src={netflix_avatar_smile} alt="user-avatar" />
-                                <a href="#">Převést účet</a>
-                            </li>
-                            <li>
-                                <img src={netflix_avatar_smile} alt="user-avatar" />
-                                <a href="#">Účet</a>
-                            </li>
-                            <li>
-                                <img src={netflix_avatar_smile} alt="user-avatar" />
-                                <a href="#">Centrum zákaznické podpory</a>
-                            </li>
-                            <a href="#">Odhlásit se z Netflixu</a>
-                        </ul>
+                        <li>
+                            <img src={netflix_avatar_smile} alt="user-avatar" />
+                            <a href="#">Petra</a>
+                        </li>
+                        <li>
+                            <img src={netflix_avatar_smile} alt="user-avatar" />
+                            <a href="#">David</a>
+                        </li>
+                        <li>
+                            <img src={netflix_avatar_smile} alt="user-avatar" />
+                            <a href="#">Daja</a>
+                        </li>
+                        <li>
+                            <img src={netflix_avatar_smile} alt="user-avatar" />
+                            <a href="#">Valinka</a>
+                        </li>
+                        <li>
+                            <img src={netflix_avatar_smile} alt="user-avatar" />
+                            <a href="#">Spravovat profily</a>
+                        </li>
+                        <li>
+                            <img src={netflix_avatar_smile} alt="user-avatar" />
+                            <a href="#">Převést účet</a>
+                        </li>
+                        <li>
+                            <img src={netflix_avatar_smile} alt="user-avatar" />
+                            <a href="#">Účet</a>
+                        </li>
+                        <li>
+                            <img src={netflix_avatar_smile} alt="user-avatar" />
+                            <a href="#">Centrum zákaznické <br />podpory</a>
+                        </li>
+                        
+                        <li><a href="#" className="sign-out-button">Odhlásit se z Netflixu</a></li>
                     </div>
                 </div>
             </div>

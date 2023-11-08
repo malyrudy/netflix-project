@@ -78,17 +78,33 @@ a:hover {
     position: absolute;
     top: 50px;
     right: 0;
-}
-
-.user-dropdown-menu ul {
     display: flex;
     flex-direction: column;
+    padding: 10px 10px 0 10px;
+    width: max-content;
+    border: 1px solid hsla(51, 12%, 89%, 0.308);
+    z-index: 999;
 }
 
-.user-dropdown-menu ul li {
-
+.user-dropdown-menu li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
+    gap: .6rem;
+    margin-bottom: .6rem;
 }
 
+.user-dropdown-menu li a {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.sign-out-button {
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 0;
+}
 .hide {
-    /* display: none; */
+    display: none;
 }
