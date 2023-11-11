@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@200;300;400&display=swap');
+
+.hero {
+    background-image: url("../images/carter-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.hero-title {
+    position: absolute;
+    top: 40vh;
+    left: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+}
+
+.title-text h1 {
+    font-size: 5.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Noto Serif Display', serif;
+    letter-spacing: -.10ch;
+}
+
+.title-text .title-description {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.title-buttons {
+    display: flex;
+    gap: .5rem;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    cursor: pointer;
+    scale: 1.04;
+}
+
+.hero-btn i {
+    margin-right: 10px;
+}
+
+.info-btn {
+    background-color: #6e6b6bc6;
+    color: #e5e5e5;
+    font-weight: normal;
+}

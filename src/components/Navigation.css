@@ -1,11 +1,13 @@
 header {
     height: 50px;
+    z-index: 999;
 }
 
 .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: inherit;
 }
 
 .wrapper {
@@ -17,6 +19,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: inherit;
 }
 
 #netflix-logo {
@@ -28,6 +31,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: inherit;
 }
 
 .nav.active {
@@ -54,6 +58,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: inherit;
 }
 
 .nav-right img {
