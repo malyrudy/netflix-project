@@ -7,7 +7,14 @@ const App = () => {
     <div>
       <Navigation />
       <Hero />
-      <MovieSlider />
+      <div className="movie-sliders">
+        <MovieSlider categoryOfMovies="Oblíbené"/>
+        <MovieSlider categoryOfMovies="Komedie"/>
+        <MovieSlider categoryOfMovies="Romantický"/>
+        <MovieSlider categoryOfMovies="Akční"/>
+        <MovieSlider categoryOfMovies="Nově přidané"/>
+        <MovieSlider categoryOfMovies="Seriál"/>
+      </div>
     </div>
   )
 }

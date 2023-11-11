@@ -3,8 +3,9 @@ import allMovies from "../data"
 import { useState } from "react"
 import categories from "./categories"
 
-const MovieSlider = () => {
-    const [typeOfMovie, setTypeOfMovie] = useState("oblíbené")
+const MovieSlider = (props) => {
+    const [typeOfMovie, setTypeOfMovie] = useState(props.categoryOfMovies)
+    console.log(props);
 
     const vysledneFilmy = allMovies.filter((oneMovie) => {
         return oneMovie["category"].includes(typeOfMovie)
@@ -14,9 +15,12 @@ const MovieSlider = () => {
     return <div className="movies-slider">
         <div className="all-buttons">
             {
-                categories.map((oneCategory, index) => {
-                    return <button className="one-button" key={index} onClick={()=> setTypeOfMovie(oneCategory)}>{oneCategory}</button>
+                categories.filter((oneCategory, index) => {
+                    return oneCategory === props.categoryOfMovies
                 })
+                // categories.map((oneCategory, index) => {
+                //     return <button className="one-button" key={index} onClick={()=> setTypeOfMovie(oneCategory)}>{oneCategory}</button>
+                // })
             }
         </div>
         <div className="all-movies">
