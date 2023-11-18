@@ -5,7 +5,6 @@ import { useEffect } from "react"
 const App = () => {
   useEffect(() => {
     const allMovieSliders = document.querySelectorAll(".movies-slider")
-    console.log(allMovieSliders);
     allMovieSliders.forEach((oneMovieSlider) => {
       const slideButtons = oneMovieSlider.querySelectorAll(".arrow-button");
       const imageList = oneMovieSlider.querySelector(".movies-list");
