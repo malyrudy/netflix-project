@@ -33,6 +33,8 @@ import shrek_treti from "./images/shrek-treti.png"
 import princezna_z_cukrarny from "./images/princezna-z-cukrarny.png"
 import vanoce_na_spadnuti from "./images/vanoce-na-spadnuti.png"
 import zranitelna_srdce from "./images/zranitelna-srdce.png"
+import nekde_mezi from "./images/nekde-mezi.png"
+import nic_neni_jak_se_zda from "./images/nic-neni-jak-se-zda.png"
 
 const AllMovies = [
     {
@@ -345,6 +347,24 @@ const AllMovies = [
         id: 35,
         image: zranitelna_srdce,
         title: "Hra na oliheň",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Romantický"]
+    },
+    {
+        id: 36,
+        image: nekde_mezi,
+        title: "Někde mezi",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Romantický"]
+    },
+    {
+        id: 37,
+        image: nic_neni_jak_se_zda,
+        title: "Nic není jak se zdá",
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",

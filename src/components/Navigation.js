@@ -8,8 +8,8 @@ import { useEffect } from "react"
 const Navigation = () => {
 
     useEffect(() => {
-        document.querySelector(".netflix-dropdown-opener").addEventListener("mouseover", () => {
-            document.querySelector(".user-dropdown-menu").classList.add("hide")
+        document.querySelector(".netflix-dropdown-opener").addEventListener("click", () => {
+            document.querySelector(".user-dropdown-menu").classList.toggle("hide")
         })
     })
     

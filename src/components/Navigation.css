@@ -90,7 +90,7 @@ a:hover {
 
 .user-dropdown-menu {
     border: 1px solid red;
-    background-color: #2927278c;
+    background-color: #292727ef;
     position: absolute;
     top: 50px;
     right: 0;
@@ -100,7 +100,7 @@ a:hover {
     width: max-content;
     border: 1px solid hsla(51, 12%, 89%, 0.308);
     z-index: 999;
-    transition: all 0.5s ;
+    transition: all 1s ease;
 }
 
 .user-dropdown-menu li {
@@ -122,6 +122,13 @@ a:hover {
     padding: 10px;
     margin-bottom: 0;
 }
+
 .hide {
     display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .nav {
+        display: none;
+    }
 }
