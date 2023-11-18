@@ -10,6 +10,7 @@ const MovieSlider = (props) => {
         return oneMovie["category"].includes(typeOfMovie)
     })
     
+<<<<<<< Updated upstream
     useEffect(() => {
         const initSlider = () => {
             const slideButtons = document.querySelectorAll(".arrow-button");
@@ -62,8 +63,33 @@ const MovieSlider = (props) => {
             </div>
             <FaArrowCircleRight className="arrow-button arrow-right" />
             
+=======
+    return <div className="container">
+        <div className="slider-wrapper">
+            <div className="category">
+                {
+                    categories.filter((oneCategory, index) => {
+                        return oneCategory === props.categoryOfMovies
+                    })
+                }
+            </div>
+            <div className="slider-wrapper">
+                <FaArrowCircleLeft className="arrow-button arrow-left"/>
+                <div className="all-movies">
+                    {
+                        vysledneFilmy.map((oneMovie) => {
+                            const {id, image, title, age, tags, description, category} = oneMovie
+
+                            return <div className="one-movie" key={id}>
+                                <img className="image-item" src={image} alt="movie-image" />
+                            </div>
+                        })
+                    }
+                </div>
+                <FaArrowCircleRight className="arrow-button arrow-right" />
+            </div>
+>>>>>>> Stashed changes
         </div>
-        
     </div>
 }
 

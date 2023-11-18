@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .movies-slider {
     position: relative;
 }
@@ -38,11 +39,22 @@
 
 .arrow-right {
     right: 0;
+=======
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-wrapper {
+
+>>>>>>> Stashed changes
 }
 .arrow-button:hover {
     color: rgb(51, 50, 50);
 }
 
+<<<<<<< Updated upstream
 .movies-list {
     /* display: grid;
     grid-template-columns: repeat(14, 1fr); */
@@ -61,4 +73,9 @@
 .one-movie:hover {
     scale: 1.4;
     z-index: 999;
+=======
+.all-movies {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+>>>>>>> Stashed changes
 }
