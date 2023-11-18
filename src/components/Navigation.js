@@ -1,10 +1,18 @@
 import "./Navigation.css"
 import logo from "../images/netflix_logo.png"
-import glass from "../images/glass.png"
 import { FaRegBell, GrEdit } from 'react-icons/fa';
 import netflix_avatar_smile from "../images/netflix-avatar-smile.gif"
+import SearchMoviesButton from "./SearchMoviesButton";
+import { useEffect } from "react"
 
 const Navigation = () => {
+
+    useEffect(() => {
+        document.querySelector(".netflix-dropdown-opener").addEventListener("mouseover", () => {
+            document.querySelector(".user-dropdown-menu").classList.add("hide")
+        })
+    })
+    
     return (
         <header>
             <div className="navigation wrapper">
@@ -20,10 +28,10 @@ const Navigation = () => {
                     </ul>
                 </div>
                 <div className="nav-right">
-                    <li><img src={glass} alt="significant glass" className="glass"/></li>
+                    <li><SearchMoviesButton /></li>
                     <li><a className="user-name" href="#">Děti</a></li>
                     <li><FaRegBell /></li>
-                    <li><img src={netflix_avatar_smile} alt="netflix-avatar-smile" /></li>
+                    <li><img src={netflix_avatar_smile} alt="netflix-avatar-smile" className="netflix-dropdown-opener"/></li>
                     <div className="user-dropdown-menu hide">
                         <li>
                             <img src={netflix_avatar_smile} alt="user-avatar" />

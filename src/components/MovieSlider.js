@@ -1,20 +1,45 @@
 import "../components/MovieSlider.css"
 import allMovies from "../data"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import categories from "./categories"
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 const MovieSlider = (props) => {
-    const [typeOfMovie, setTypeOfMovie] = useState(props.categoryOfMovies)
-    console.log(props);
-
+    const typeOfMovie = props.categoryOfMovies
     const vysledneFilmy = allMovies.filter((oneMovie) => {
         return oneMovie["category"].includes(typeOfMovie)
     })
     
-
+    useEffect(() => {
+        const initSlider = () => {
+            const slideButtons = document.querySelectorAll(".arrow-button");
+            const imageList = document.querySelector(".movies-list");
+            const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+        
+            // Slide images according to slide buttons click
+            slideButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const direction = button.id === "prev-slide" ? -1 : 1;
+                    const scrollAmount = imageList.clientWidth * direction;
+                    imageList.scrollBy({ left: scrollAmount, behavior: "smooth"})
+                })
+            })
+            // Hiding the buttons
+            const handleSlideButtons = () => {
+                slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "block";
+                slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "block";
+            }
+            // update position of scrollbar 
+            imageList.addEventListener("scroll", () => {
+                handleSlideButtons();
+            })
+            
+    }
+    window.addEventListener("load", initSlider)
+    })
+    
     return <div className="movies-slider">
-        <div className="all-buttons">
+        <div className="one-button">
             {
                 categories.filter((oneCategory, index) => {
                     return oneCategory === props.categoryOfMovies
@@ -24,21 +49,19 @@ const MovieSlider = (props) => {
                 // })
             }
         </div>
-        <div className="movies-and-buttons">
-            <FaArrowCircleLeft className="arrow-button arrow-left"/>
-            <div className="all-movies">
+        <div className="slider-wrapper">
+            <FaArrowCircleLeft id="prev-slide" className="arrow-button arrow-left"/>
+            <div className="movies-list">
                 {
                     vysledneFilmy.map((oneMovie) => {
                         const {id, image, title, age, tags, description, category} = oneMovie
 
-                        return <div className="one-movie" key={id}>
-                            <img src={image} alt="movie-image" />
-                            <h3>{title}</h3>
-                        </div>
+                        return <img className="one-movie" src={image} alt="movie-image" key={id}/>
                     })
                 }
             </div>
             <FaArrowCircleRight className="arrow-button arrow-right" />
+            
         </div>
         
     </div>

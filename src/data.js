@@ -25,7 +25,14 @@ import vis_a_vis from "./images/vis-a-vis.png"
 import vlk_z_wall_street from "./images/vlk-z-wall-street.png"
 import za_carou from "./images/za-carou.png"
 import zivot_na_nasi_planete from "./images/zivot-na-nasi-planete.png"
-
+import laska_a_jine_zavislosti from "./images/laska-a-jine-zavislosti.png"
+import mimi_sef from "./images/mimi-sef.png"
+import shaft from "./images/shaft.png"
+import grinch from "./images/grinch.png"
+import shrek_treti from "./images/shrek-treti.png"
+import princezna_z_cukrarny from "./images/princezna-z-cukrarny.png"
+import vanoce_na_spadnuti from "./images/vanoce-na-spadnuti.png"
+import zranitelna_srdce from "./images/zranitelna-srdce.png"
 
 const AllMovies = [
     {
@@ -270,6 +277,78 @@ const AllMovies = [
         tags: "Vtipný * Napínavý * Rodina",
         description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
         category: ["Akční", "Seriál"]
+    },
+    {
+        id: 28,
+        image: laska_a_jine_zavislosti,
+        title: "Láska a jiné závislosti",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Akční", "Seriál"]
+    },
+    {
+        id: 29,
+        image: mimi_sef,
+        title: "Mimi šéf",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Akční", "Komedie"]
+    },
+    {
+        id: 30,
+        image: shaft,
+        title: "Shaft",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Akční", "Komedie"]
+    },
+    {
+        id: 31,
+        image: grinch,
+        title: "Grinch",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Komedie"]
+    },
+    {
+        id: 32,
+        image: shrek_treti,
+        title: "Shrek třetí",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Akční", "Komedie"]
+    },
+    {
+        id: 33,
+        image: princezna_z_cukrarny,
+        title: "Princezna z cukrárny",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Romantický"]
+    },
+    {
+        id: 34,
+        image: vanoce_na_spadnuti,
+        title: "Hra na oliheň",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Romantický"]
+    },
+    {
+        id: 35,
+        image: zranitelna_srdce,
+        title: "Hra na oliheň",
+        age: "+13",
+        tags: "Vtipný * Napínavý * Rodina",
+        description: "Milá zdravotní sestra zkouší zjistit, jak pacientka v bezvědomí přišla ke svým zraněním. Podle všeho za nimi stojí kruté nepřátelství, nevěra, zrada a taky vražda.",
+        category: ["Romantický"]
     },
 ]
 
