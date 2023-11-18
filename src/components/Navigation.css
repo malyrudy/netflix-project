@@ -78,8 +78,19 @@ a:hover {
     margin: 0;
 }
 
+.netflix-dropdown-opener {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.netflix-dropdown-opener:hover {
+    cursor: pointer;
+    scale: 1.4;
+}
+
 .user-dropdown-menu {
     border: 1px solid red;
+    background-color: #2927278c;
     position: absolute;
     top: 50px;
     right: 0;
@@ -89,6 +100,7 @@ a:hover {
     width: max-content;
     border: 1px solid hsla(51, 12%, 89%, 0.308);
     z-index: 999;
+    transition: all 0.5s ;
 }
 
 .user-dropdown-menu li {
