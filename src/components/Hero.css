@@ -2,7 +2,7 @@
 
 .hero {
     background-image: url("../images/carter-hero.jpg");
-    opacity: 0.6;
+    /* opacity: 0.6; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
@@ -12,6 +12,18 @@
     right: 0;
     left: 0;
     bottom: 0;
+    /* position: relative; */
+}
+
+.bg-opacity {
+    position: absolute;
+    background-color: black;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
 }
 
 .hero-title {
@@ -20,7 +32,7 @@
     left: 5vh;
     display: flex;
     flex-direction: column;
-    width: 620px;
+    z-index: 999;
 }
 
 .title-text h1 {
@@ -29,11 +41,14 @@
     text-transform: uppercase;
     font-family: 'Noto Serif Display', serif;
     letter-spacing: -.10ch;
+    text-shadow: 1px 1px 1px rgb(10, 10, 10);
 }
 
 .title-text .title-description {
     font-size: 1.05rem;
     margin-bottom: 1.5rem;
+    max-width: 800px;
+    text-shadow: 1px 1px 1px rgb(10, 10, 10);
 }
 
 .title-buttons {
@@ -67,4 +82,18 @@
     background-color: #6e6b6bc6;
     color: #e5e5e5;
     font-weight: normal;
+}
+
+@media all and (max-width: 700px) {
+    .title-text h1 {
+        font-size: 4rem;
+        text-shadow: 1px 1px 1px rgb(10, 10, 10);
+    }
+    
+    .title-text .title-description {
+        font-size: .9rem;
+        margin-bottom: 1.5rem;
+        max-width: 450px;
+        text-shadow: 1px 1px 1px rgb(10, 10, 10);
+    }
 }

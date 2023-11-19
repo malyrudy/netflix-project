@@ -35,5 +35,6 @@ body {
     flex-direction: column;
     gap: 15px;
     position: relative;
-    bottom: -70vh;
+    bottom: -68vh;
+    overflow: auto;
 }

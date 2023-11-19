@@ -4,6 +4,7 @@ import { FaPlay, FaInfo } from 'react-icons/fa';
 const Hero = () => {
     return (
         <div className="hero">
+            <div className="bg-opacity"></div>
             <div className="hero-title">
                 <div className="title-text">
                     <h1>Coach Carter</h1>
