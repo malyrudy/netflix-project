@@ -140,3 +140,11 @@
 .movie-description h4 {
     text-align: center;
 }
+
+@media all and (max-width: 700px) {
+    .one-movie-img {
+        width: 200px;
+        height: 120px;
+        transition: all 0.5s ease;
+    }
+}

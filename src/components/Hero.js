@@ -4,6 +4,7 @@ import { FaPlay, FaInfo } from 'react-icons/fa';
 const Hero = () => {
     return (
         <div className="hero">
+            <div className="hero-bg"></div>
             <div className="hero-title">
                 <div className="title-text">
                     <h1>Coach Carter</h1>
@@ -12,7 +13,6 @@ const Hero = () => {
                 <div className="title-buttons">
                     <button className="hero-btn"><i><FaPlay /></i>Přehrát</button>
                     <button className="hero-btn info-btn"><i><FaInfo /></i>Další informace</button>
-                    
                 </div>
             </div>
         </div>

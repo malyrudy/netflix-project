@@ -27,7 +27,7 @@ const MovieSlider = (props) => {
 
                         return <div className="one-movie" key={id}>
                             <img className="one-movie-img" src={image} alt="movie-image"/>
-                            <div className="movie-more-info">
+                            <div className="movie-more-info hide">
                                 <div className="button-section">
                                     <div className="left">
                                         <li><FaPlay className="button"/></li>
