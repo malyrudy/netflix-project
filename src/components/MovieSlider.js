@@ -2,7 +2,7 @@ import "../components/MovieSlider.css"
 import allMovies from "../data"
 import { useState, useEffect } from "react"
 import categories from "./categories"
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { FaArrowCircleLeft, FaArrowCircleRight, FaPlay, FaPlus, FaThumbsUp, FaChevronDown } from 'react-icons/fa';
 
 const MovieSlider = (props) => {
     const typeOfMovie = props.categoryOfMovies
@@ -25,7 +25,31 @@ const MovieSlider = (props) => {
                     vysledneFilmy.map((oneMovie) => {
                         const {id, image, title, age, tags, description, category} = oneMovie
 
-                        return <img className="one-movie" src={image} alt="movie-image" key={id}/>
+                        return <div className="one-movie" key={id}>
+                            <img className="one-movie-img" src={image} alt="movie-image"/>
+                            <div className="movie-more-info">
+                                <div className="button-section">
+                                    <div className="left">
+                                        <li><FaPlay className="button"/></li>
+                                        <li><FaPlus className="button"/></li>
+                                        <li><FaThumbsUp className="button"/></li>
+                                    </div>
+                                    <li><FaChevronDown className="button"/></li>
+                                </div>
+                                <div className="movie-details">
+                                    <p className="match">97% shoda</p>
+                                    <div className="movie-description">
+                                        <div className="adq">
+                                            <p className="age border">{age}</p>
+                                            <p className="duration">1 h 36 m</p>
+                                            <p className="quality border">HD</p>
+                                        </div>
+                                        <p className="tags">{tags}</p>
+                                        <h4>{title}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     })
                 }
             </div>
