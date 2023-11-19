@@ -8,13 +8,7 @@ const App = () => {
     allMovieSliders.forEach((oneMovieSlider) => {
       const slideButtons = oneMovieSlider.querySelectorAll(".arrow-button");
       const imageList = oneMovieSlider.querySelector(".movies-list");
-      const all_movies = oneMovieSlider.querySelectorAll(".one-movie")
-      all_movies.forEach((one_movie) => {
-        one_movie.addEventListener("click", () => {
-          one_movie.querySelector(".movie-more-info").classList.toggle("hide")
-        })
-      })
-      // const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+      const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
       // Slide images according to slide buttons click
       slideButtons.forEach((button) => {
