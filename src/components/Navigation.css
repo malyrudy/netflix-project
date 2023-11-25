@@ -100,7 +100,13 @@ a:hover {
     width: max-content;
     border: 1px solid hsla(51, 12%, 89%, 0.308);
     z-index: 999;
-    transition: all 1s ease;
+    transition: opacity .5s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.user-dropdown-menu.hide {
+    opacity: 0;
 }
 
 .user-dropdown-menu li {
@@ -123,9 +129,6 @@ a:hover {
     margin-bottom: 0;
 }
 
-.hide {
-    display: none;
-}
 
 @media screen and (max-width: 850px) {
     .nav {
