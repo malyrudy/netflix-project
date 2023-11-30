@@ -23,7 +23,7 @@ const MovieSlider = (props) => {
             <div className="movies-list">
                 {
                     vysledneFilmy.map((oneMovie) => {
-                        const {id, image, title, age, tags, description, category} = oneMovie
+                        const {id, image, title, age, tags} = oneMovie
 
                         return <div className="one-movie" key={id}>
                             <img className="one-movie-img" src={image} alt="movie-image"/>

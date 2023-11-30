@@ -8,7 +8,7 @@ const App = () => {
     allMovieSliders.forEach((oneMovieSlider) => {
       const slideButtons = oneMovieSlider.querySelectorAll(".arrow-button");
       const imageList = oneMovieSlider.querySelector(".movies-list");
-      const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+      // const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
       // Slide images according to slide buttons click
       slideButtons.forEach((button) => {
