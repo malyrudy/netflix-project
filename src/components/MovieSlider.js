@@ -5,6 +5,7 @@ import categories from "./categories"
 import { FaArrowCircleLeft, FaArrowCircleRight, FaPlay, FaPlus, FaThumbsUp, FaChevronDown } from 'react-icons/fa';
 
 const MovieSlider = (props) => {
+    const [activeMovie, setActiveMovie] = useState(false)
     const typeOfMovie = props.categoryOfMovies
     const vysledneFilmy = allMovies.filter((oneMovie) => {
         return oneMovie["category"].includes(typeOfMovie)
@@ -25,9 +26,9 @@ const MovieSlider = (props) => {
                     vysledneFilmy.map((oneMovie) => {
                         const {id, image, title, age, tags} = oneMovie
 
-                        return <div className="one-movie" key={id}>
+                        return <div className="one-movie" key={id} onClick={() => setActiveMovie(!activeMovie)}>
                             <img className="one-movie-img" src={image} alt="movie-image"/>
-                            <div className="movie-more-info hide">
+                            <div className={`${activeMovie ? "movie-more-info active" : "movie-more-info"}`}>
                                 <div className="button-section">
                                     <div className="left">
                                         <li><FaPlay className="button"/></li>

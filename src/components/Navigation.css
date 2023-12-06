@@ -74,6 +74,12 @@ a:hover {
     font-size: .9rem;
 }
 
+.nav-right li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .nav-right .user-name {
     margin: 0;
 }

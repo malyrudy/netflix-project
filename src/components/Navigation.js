@@ -28,7 +28,7 @@ const Navigation = () => {
                     </ul>
                 </div>
                 <div className="nav-right">
-                    <li><SearchMoviesButton /></li>
+                    <li><button><SearchMoviesButton /></button></li>
                     <li><a className="user-name" href="#">Děti</a></li>
                     <li><FaRegBell /></li>
                     <li><img src={netflix_avatar_smile} alt="netflix-avatar-smile" className="netflix-dropdown-opener"/></li>
